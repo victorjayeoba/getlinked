@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --primary-color: #150e28;
+  --secondary-color: #d434fe;
+  --tertiary-color: #ff26b9;
+  --primaay-text-stroke: #000000;
+  --primary_gradient: linear-gradient(
+    70deg,
+    #ff26b9 5%,
+    #d434fe 50%,
+    #903aff 100%
+  );
+  @apply text-sm;
+}
+
+h2 {
+  @apply text-2xl my-3;
+}
+.fixed_nav {
+  @apply fixed top-0 left-0 w-full;
+}
+p {
+  line-height: 2;
+}
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+.p_gradient {
+  background-image: var(--primary_gradient);
+}
+
+div,
+section {
+  @apply text-center lg:text-start;
+}
+section {
+  @apply px-8 py-12 pb-14;
+}
+section,
+main {
+  @apply border-b-[1px]  border-b-gray-500 container mx-auto;
+}
+section {
+  @apply lg:flex;
+}
+/* .txt_stroke {
+  -webkit-text-stroke: 1px black;
+  color: white;
+  text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
+    -1px 1px 0 #000, 1px 1px 0 #000;
+} */
+
+/*
+  text-shadow: 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black,
+    0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black,
+    0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black,
+    0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black;
+    */
+main h1 span {
+  display: inline-block;
+  @apply lg:mb-4;
+}
+.animated_line {
+  transform-origin: left;
+}
+.p_gradient {
+  border: 1px solid transparent;
+  background-image: var(--primary_gradient);
+}
+.p_gradient:hover {
+  background-image: none;
+  border: 1px solid var(--tertiary-color);
+}
+.absolute_hero_image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.attributes p {
+  @apply my-6;
+}
+.attributes p span:first-child {
+  @apply font-semibold;
+}
+
+.minor_btn {
+  @apply p_gradient rounded-md py-2 px-4 my-2;
+}
+/* .lincense ul,
+.lincense li {
+  display: list-item;
+} */
+ul li {
+  @apply my-8;
+}
+
+.lincense ul li {
+  @apply flex gap-3;
+}
+
+footer div {
+  @apply text-start px-8;
+}
+footer div:first-child {
+  @apply text-start  px-8 py-6;
+}
+footer ul li a {
+  @apply hover:text-[--secondary-color];
+}
+
+footer h3 {
+  @apply text-base text-[--secondary-color];
+}
+.timeline-controls {
+  display: none !important;
+}
+.timeline-card-content {
+  padding: 1rem 1.5rem !important;
+}
+.using-icon {
+  padding: 1rem !important;
+  background: var(--tertiary-color) !important;
+}
+.qLlNn {
+  padding: 0 !important;
+}
+.timeline-card-content {
+  display: flex !important;
+  flex-direction: column !important;
+  background: transparent !important;
+  height: 30px !important;
+  padding: 0 !important;
+  align-items: center !important;
+}
+.timeline-item-title.active {
+  background: transparent !important;
+}
+.timeline-card-content rc-card-title {
+  font-size: 1.3rem;
+}
+.timeline-card-content * {
+  color: #d434fe !important;
+  padding: 0 !important;
+  line-height: 1.4 !important;
+  padding-inline: 0.5em !important;
+}
+.card-sub-title {
+  margin-block: 0.5rem !important;
+}
+.rc-card {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  padding-top: 6rem !important;
+  border: none !important;
+}
+.rc-card-text {
+  padding: 0 !important;
+}
+.rc-title {
+  color: #d434fe !important;
+}
+.TriangleIconWrapper-sc-d7qjm1-11 {
+  background: transparent !important;
+  display: none !important;
+}
+.TimelineContentDetails-sc-d7qjm1-5 {
+  text-align: start !important;
+  margin-block: 0.5em !important;
+}
+/* 
+<h1 class="CardTitle-sc-d7qjm1-3 FCScf rc-card-title" data-class="rc-card-title">Dunkirk</h1> */
+
+@media (min-width: 900px) {
+  :root {
+    font-size: 20px;
+  }
+}
