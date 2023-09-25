@@ -9,8 +9,8 @@ import man_touch from "../../public/images/Image 1.png";
 import Image from "next/image";
 function Hero() {
   return (
-    <main className="pt-8 pr-0 lg:pt-10">
-      <h2 className="italic text-center font-semibold mb-10  txt_stroke lg:text-right lg:mb-0">
+    <main className=" pt-20 pr-0 ">
+      <h2 className="italic text-center font-semibold mb-6  txt_stroke lg:text-right lg:mb-0  lg:mr-24 ">
         Igniting a Revolution in{" "}
         <div className="inline-block relative">
           <span>HR Innovation</span>{" "}
@@ -32,26 +32,38 @@ function Hero() {
         </div>
       </h2>
 
-      <aside className="lg:flex lg:mx-auto lg:pl-24 relative lg:items-start lg:gap-4  lg:justify-center">
-        <div className="lg:py-10 ">
+      <aside className="lg:flex lg:mx-auto  relative lg:items-start lg:gap-4  lg:justify-center">
+        <div className="lg:pt-6">
           <div>
-            <div className=" lg:flex flex-1 lg:flex-col lg:gap-16 lg:pt-4 my-3">
+            <div className=" lg:flex flex-1 lg:flex-col  pt-12">
               <h1
-                className="inline text-4xl lg:text-5xl"
+                className="inline  text-4xl lg:text-6xl"
                 style={{ fontFamily: "__clashdisplay_10f617" }}
               >
-                <span>getlinked Tech</span> <br />
-                <span className="inline-flex">
-                  <span>Hackathon</span>
-                  <span className="text-[--secondary-color]">1.0</span>
-                  <div className="inline-flex lg:-mt-3">
+                <span
+                  className="relative
+
+                "
+                >
+                  <span>getlinked Tech</span>
+                  <Image
+                    className=" inline-block absolute_bulb max-lg:w-8"
+                    src={bulb}
+                    alt="counter"
+                  />
+                </span>{" "}
+                <br />
+                <span className="inline-flex gap-2">
+                  <span>Hackathon </span>
+                  <span className="text-[--secondary-color]"> 1.0</span>
+                  <div className="inline-flex items-center lg:-mt-3">
                     <Image
-                      className="w-full .image inline-block"
+                      className="w-8 lg:w-[4rem] aspect-square  inline-block"
                       src={chain}
                       alt={"chain"}
                     />
                     <Image
-                      className="w-full h-full  inline-block"
+                      className="w-8 h-full lg:w-[3.5rem] lg:h-[3.5rem]  inline-block "
                       src={blast}
                       alt={"chain"}
                     />
@@ -63,8 +75,11 @@ function Hero() {
             <div>
               <p className=" font-extralight  leading-6">
                 <span>Participate in getlinked tech Hackathon </span>
-                <br />
-                <span>2023 stand a chance to win a Big prize</span>
+                <br className="lg:hidden" />
+                <span>
+                  2023 stand <br className=" max-lg:hidden " /> a chance to win
+                  a Big prize
+                </span>
               </p>
             </div>
             <div className=" my-5 lg:mt-8">
@@ -73,7 +88,7 @@ function Hero() {
               </button>
             </div>
           </div>
-          <div className="lg:mt-12">
+          <div className="lg:mt-8">
             <Image
               className="mx-auto inline-block "
               src={counter}

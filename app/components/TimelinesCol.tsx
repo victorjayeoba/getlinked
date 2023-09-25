@@ -13,25 +13,25 @@ import {
 function TimelinesCol() {
   const items = [
     {
-      title: "May 1940",
-      cardTitle: "Dunkirk",
+      title: "November 18, 2023",
+      cardTitle: "Hackathon Announcement",
+
+      cardDetailedText:
+        "The getlinked tech hackathon 1.0 is formally announced to the general public and teams begin to get ready to register",
+    },
+    {
+      title: "November 18, 2023",
+      cardTitle: "Teams Registration begins",
 
       cardDetailedText:
         "Interested teams can now show their interest in the getlinked tech hackathon 1.0 2023 by proceeding to register",
     },
     {
-      title: "May 1940",
-      cardTitle: "Dunkirk",
+      title: "November 18, 2023",
+      cardTitle: "Teams Registration ends",
 
       cardDetailedText:
-        "Men of the British Expeditionary Force (BEF) wade out to..",
-    },
-    {
-      title: "May 1940",
-      cardTitle: "Dunkirk",
-
-      cardDetailedText:
-        "Men of the British Expeditionary Force (BEF) wade out to..",
+        "Interested Participants are no longer Allowed to register",
     },
     {
       title: "May 1940",
@@ -55,12 +55,9 @@ function TimelinesCol() {
         theme={{
           primary: "#d434fe",
         }}
-        nestedCardHeight="10px"
         items={items}
+        useReadMore={false}
         mode="VERTICAL_ALTERNATING"
-        slideShow=" true"
-        slideItemDuration={4500}
-        slideShowType="reveal"
       >
         <div className="chrono-icons">
           <div>1</div>

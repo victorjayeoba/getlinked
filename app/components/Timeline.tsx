@@ -4,14 +4,18 @@ import { timeline } from "@/libs/timline";
 
 function Timeline() {
   return (
-    <section>
-      <h2 style={{ fontFamily: "__clashdisplay_10f617" }}>Timeline</h2>
-      <p>
-        Here is the breakdown of the time we anticipate using for the upcoming
-        event.
-      </p>
-      <TimelinesCol />
-    </section>
+    <div className="wrapper">
+      <section className="block lg:text-center">
+        <h2 style={{ fontFamily: "__clashdisplay_10f617" }}>Timeline</h2>
+        <p className="mb-8">
+          <span>Here is the breakdown of the time we anticipate</span>{" "}
+          <br className="max-lg:hidden" />
+          <span> using for the upcoming</span>
+          event.
+        </p>
+        <TimelinesCol />
+      </section>
+    </div>
   );
 }
 
